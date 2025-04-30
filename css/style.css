@@ -1,4 +1,68 @@
 /* Created by: Mr. Coxall
 * Created on: Sep 2020
 * This file contains the CSS for index.html
-*/
+/* Style the custom header */
+.custom-header {
+    background-color: #4a148c;
+    /* Deep purple */
+    color: white;
+}
+
+/* Card styling */
+.calculator-card {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #f3e5f5;
+    padding-bottom: 20px;
+}
+
+/* Result display styling */
+.area-result {
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    color: #4a148c;
+}
+
+/* Ensure inputs have enough space to avoid overlap */
+.mdl-textfield__input {
+    padding: 10px 12px;
+    /* Adjust padding to provide enough space */
+    line-height: 1.5;
+    /* Set appropriate line height */
+    font-size: 16px;
+    /* Ensure text is large enough */
+    height: 56px;
+    /* Set the height of the input to prevent overlap */
+}
+
+/* Fix label behavior for floating labels */
+.mdl-textfield.is-dirty .mdl-textfield__label {
+    top: -15px;
+    /* Ensure the label doesn't overlap with the input text */
+}
+
+.mdl-textfield__label {
+    top: 16px;
+    /* Position label correctly */
+    padding-top: 8px;
+    /* Adjust padding for label */
+    font-size: 14px;
+    /* Ensure the label has a proper size */
+}
+
+/* Label behavior when the input is focused */
+.mdl-textfield__input:focus {
+    padding-top: 10px;
+    /* Adjust padding when focused */
+}
+
+/* Fix label positioning when input has a value */
+.mdl-textfield.is-dirty .mdl-textfield__label,
+.mdl-textfield.is-focused .mdl-textfield__label {
+    top: -20px;
+    font-size: 12px;
+    color: #4a148c;
+    /* Keep consistent label color */
+}
